@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  background-color: #f5ede6;
+}
+
+.welcomeMessage {
+  position: absolute;
+  width: 256px;
+  height: 68px;
+  left: 22px;
+  top: 43px;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+
+  color: #010201;
+}
+.welcomeMessage2 {
+  position: absolute;
+  width: 256px;
+  height: 68px;
+  left: 22px;
+  top: 55px;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+
+  color: #0D4E8B;
+}
+
+.imageHome {
+  position: absolute;
+  width: 275px;
+  height: 303px;
+  left: 13px;
+  top: 181px;
+}
+
+.mottoASLtE {
+  position: absolute;
+  width: 228px;
+  height: 68px;
+  left: 22px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  top: 147px;
+
+  color: #0D4E8B;
+
+}
+
+.buttonGetStarted {
+  position: absolute;
+  width: 241px;
+  height: 63px;
+  left: 30px;
+  top: 468px;
+
+  color: white;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+   background: #008985;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.signupPageBox {
+  position: absolute;
+  width: 100vw;
+  height: 510px;
+  left: -4px;
+  top: -211px;
+
+  background: #008985;
+  border-radius: 17px;
+}
+
+.buttonGetStarted2 {
+  position: absolute;
+  width: 241px;
+  height: 63px;
+  left: 30px;
+  top: 550px;
+
+  color: white;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+   background: #008985;
+  border: 0px;
+  border-radius: 10px;
+}

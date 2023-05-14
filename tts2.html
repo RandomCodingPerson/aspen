@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aspen</title>
+    <style>
+      #text {
+        width: 80vw;
+        margin-top:8vh;
+        height: 52vh;
+        resize: none;
+        margin-left:4vw;
+        border:white solid 5px;
+        font-size: 50px;
+        background: transparent;
+        padding:4vw;
+        border-radius:4vw;
+        
+      }
+      #speak {
+        width: 90vw;
+                margin-left:4vw;
+        height: 25vh;
+        border-radius: 4vw;
+        margin-top:1vh;
+      }
+      body {
+        background: #202545;
+      }
+    </style>
+  </head>
+  <body>
+   
+<div class="wrapper">
+  <textarea id="text" style='background-color:#202545; color: white;font-family: Verdana;'>Type here for text to speech!</textarea>
+  <button id="speak" style='background-color:#F8E8D7;'><img style='width: 20vh;height:20vh;background-color:#F8E8D7;' src='https://images.vexels.com/media/users/3/208347/isolated/preview/22bf32066334d0bdd0f65f2417748254-microphone-icon-stroke.png'/></button>
+</div>
+
+     <script>
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+      // grab the UI elements to work with
+const textEl = document.getElementById('text');
+const speakEl = document.getElementById('speak');
+
+// click handler
+speakEl.addEventListener('click', speakText);
+
+function speakText() {
+  // stop any speaking in progress
+  window.speechSynthesis.cancel();
+
+  // speak text
+  const text = textEl.value;
+  const utterance = new SpeechSynthesisUtterance(text);
+  window.speechSynthesis.speak(utterance);
+}
+
+    </script>
+  </body>
+</html>
